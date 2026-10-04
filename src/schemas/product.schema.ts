@@ -79,6 +79,48 @@ export class Product_directory {
     trim: true,
   })
   image?: string;
+
+  @Prop({
+    required: false,
+    trim: true,
+  })
+  technicalName?: string;
+
+  @Prop({ required: false, type: Date })
+  dateOfManufacture?: Date;
+
+  @Prop({ required: false, type: Date })
+  expiryDate?: Date;
+
+  @Prop({
+    required: false,
+    trim: true,
+  })
+  manufacturingCompany?: string;
+
+  @Prop({
+    required: false,
+    trim: true,
+  })
+  marketingCompany?: string;
+
+  @Prop({
+    required: false,
+    trim: true,
+  })
+  address?: string;
+
+  @Prop({
+    required: false,
+    trim: true,
+  })
+  customerCare?: string;
+
+  @Prop({
+    required: false,
+    trim: true,
+  })
+  batchNumber?: string;
 }
 
 export const ProductSchema =

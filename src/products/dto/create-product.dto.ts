@@ -6,6 +6,7 @@ import {
   IsNumber,
   Min,
   Max,
+  IsDateString,
 } from 'class-validator';
 import { Type } from 'class-transformer';
 
@@ -59,4 +60,36 @@ export class CreateProductDto {
   @IsOptional()
   @IsString()
   image?: string;
+
+  @IsOptional()
+  @IsString()
+  technicalName?: string;
+
+  @IsOptional()
+  @IsDateString()
+  dateOfManufacture?: string;
+
+  @IsOptional()
+  @IsDateString()
+  expiryDate?: string;
+
+  @IsOptional()
+  @IsString()
+  manufacturingCompany?: string;
+
+  @IsOptional()
+  @IsString()
+  marketingCompany?: string;
+
+  @IsOptional()
+  @IsString()
+  address?: string;
+
+  @IsOptional()
+  @IsString()
+  customerCare?: string;
+
+  @IsOptional()
+  @IsString()
+  batchNumber?: string;
 }
